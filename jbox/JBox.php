@@ -123,7 +123,7 @@ class JBox extends CWidget
 
 
     /**
-     * @return JContextMenu
+     * @return JBox
      */
     public function publishAssets()
     {
@@ -133,7 +133,7 @@ class JBox extends CWidget
     }
 
     /**
-     * @return JContextMenu
+     * @return JBox
      */
     public function registerClientScripts()
     {
@@ -151,12 +151,12 @@ class JBox extends CWidget
         if ($this->manualInit == true) {
             return $this;
         }
-         //不准备过多封装 这里就截止 下面应该是插件的初始化js代码注册
+        //不准备过多封装 这里就截止 下面应该是插件的初始化js代码注册
         return $this;
     }
 
     /**
-     * @return string
+     * @return JBox
      */
     public function handleI18n()
     {
