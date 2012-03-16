@@ -1,0 +1,19 @@
+用法示例：
+
+<?php
+
+$this->widget('common.widgets.jbox.JBox', array(
+    'skinBase'=>'Skins2',
+    'skin'=>'Pink',
+          ));
+?>
+
+<script type="text/javascript">
+    function test1(){
+        // 此例省略了前缀html:，前缀标识是不区分大小写的，也可以是HTML:
+        var info = 'jQuery jBox<br /><br />版本：v2.0<br />日期：2011-7-24<br />';
+        info += '官网：<a target="_blank" href="http://kudystudio.com/jbox">http://kudystudio.com/jbox</a>';
+        $.jBox.info(info);
+    }
+</script>
+<a href="javascript:;" onclick="test1()">test1</a>
